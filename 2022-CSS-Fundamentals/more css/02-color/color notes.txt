@@ -1,0 +1,24 @@
+Hue
+---
+Hue is near to the colloquial idea of color. Technically speaking 
+however, a color can also have saturation and brightness as 
+well as hue.
+Saturation
+----------
+Saturation refers to the amount of gray in a color. At maximum 
+saturation, there would be no gray in the color. At minimum 
+saturation, the color would be mostly gray.
+Brightness
+----------
+Brightness (or "value") refers to how much black is in a color. 
+At maximum brightness, there would be no black in the color. 
+At minimum brightness, the color would be very dark.
+the actual name of the color (hue), how strong and colorful it looks (saturation),
+and how light or dark it is (brightness)
+
+Where to use color in CSS rules:
+--------------------------------
+If a CSS property accepts the <color> data type as a value, it will accept any of the above methods of expressing color. For styling text, use the color, text-shadow and text-decoration-color properties which all accept color as the value or color as part of the value.
+
+For backgrounds, you can set a color as the value for background or background-color. Colors can also be used in gradients, such as linear-gradient. Gradients are a type of image that can be programmatically defined in CSS. Gradients accept two or more colors in any combination of color format, such as hex, rgb or hsl.
+Finally, border-color, and outline-color set the color for borders and outlines on your boxes. The box-shadow property also accepts color as one of the values.

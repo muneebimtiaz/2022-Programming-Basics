@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+            box-sizing: border-box;
+            font-family: Arial ;
+        }
+        .header{
+            background-color: rgb(29, 175, 139);
+            color: white;
+            text-align: center;
+            padding: 80px;
+        }
+        .navbar{
+           background-color: rgb(51, 50, 50);
+           padding: 20px;
+           overflow: auto;
+           display: block;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+        }
+        .navbar a:hover{
+            background-color: rgb(226, 226, 226);
+            color: black;
+            text-decoration: none;
+            padding: 20px;
+        }
+        .article-1{
+            background-color: rgb(241, 237, 237);
+            /* border: 2px solid black; */
+            align-items: center;
+            width: 30%;
+            padding: 40px;
+        }
+        .article-2{
+            background-color: rgb(248, 247, 247);
+            /* border: 2px solid black; */
+            align-items: center;
+            width: 70%;
+            padding: 40px;
+        }
+        .footer{
+            background-color: rgb(213, 212, 212);
+            color: black;
+            text-align: center;
+            padding: 40px;
+        }
+        .main{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="header">
+                <h1>My Website</h1>
+                <br>
+                <p>With a <b>flexible</b> layout</p>
+            </div>
+            <div class="navbar">
+                <a href="link">Link</a>
+                <a href="link">Link</a>
+                <a href="link">Link</a>
+                <a href="link">Link</a>
+            </div>
+        <div class="main">
+            <div class="article-1">
+                <h2>About Me</h2>
+                <br>
+                <p>Photo of me:</p>
+                <br>
+                <div style="background-color: rgb(175, 175, 175) ;;width: 100%;height: 200px;">Image</div> 
+                <br>
+                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                <h4>More Text</h4>
+                <br>
+                <p>Lorem ipsum dolor sit.</p> <br>
+                <div style="background-color: rgb(175, 175, 175) ;width: 100%;height: 75px;">Image</div> 
+                <br>               
+                <div style="background-color: rgb(175, 175, 175) ;;width: 100%;height: 75px;">Image</div> 
+                <br>               
+                <div style="background-color: rgb(175, 175, 175) ;;width: 100%;height: 75px;">Image</div>                
+            </div>
+            <div class="article-2">
+                <h2>TITLE HEADING</h2><br>
+                <p>Title description,Dec 7,2017</p><br>
+                <div style="background-color: rgb(175, 175, 175);width: 100%;height: 200px;">Image</div><br>
+                <p>Some text..</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iusto velit accusamus quos ducimus perspiciatis in sequi soluta.</p>
+                <br><br>
+                <h2>TITLE HEADING</h2><br>
+                <p>Title description,Dec 7,2017</p><br>
+                <div style="background-color: rgb(175, 175, 175) ;width: 100%;height: 200px;">Image</div><br>
+                <p>Some text..</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iusto velit accusamus quos ducimus perspiciatis in sequi soluta.</p>
+            </div>
+        </div>
+        <div class="footer"><b>Footer</b></div>
+    </div>
+</body>
+</html>

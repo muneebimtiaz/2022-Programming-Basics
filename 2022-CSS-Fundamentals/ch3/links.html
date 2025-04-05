@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .keyboard{
+            color: black;
+            font-size: 50px;
+        }
+        .mouse{
+            font-size: 30px;
+        }
+        body{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        /* When setting the style for several link states, there are some order rules:
+        a:hover MUST come after a:link and a:visited
+        a:active MUST come after a:hover */
+        a:link{
+            color: blue
+        }
+        a:visited{
+            color: darkblue;
+        }
+        a:hover{
+            color: white;
+            background-color: rgb(0, 58, 250);
+            padding: 3px;
+            text-decoration: none;
+        }
+        a:active{
+            color: black;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="keyboard">
+        <h1>Links</h1>
+    </div>
+    <hr><br>
+    <div class="mouse">
+        <div><a href="https://www.google.com/" target="_main">Google</a></div>
+        <br>
+        <div><a href="https://www.facebook.com/" target="_main">Facebook</a></div>
+        <br>
+        <div><a href="https://twitter.com/home" target="_main">twitter</a></div>
+        <br>
+        <div><a href="https://www.youtube.com/" target="_main">youtube</a></div>
+        <br>
+        <div><a href="www.wikipedia.org" target="_main">wikipedia</a></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        .container{
+            margin: 5%;padding: 5%;
+            border: 2px solid black;
+            width: fit-content;
+            box-shadow: inset;
+            border-radius: 8px;
+        }
+        label{
+            font-size: small;
+            font-weight: bold;
+        }
+        input{
+            background-color: rgba(222, 219, 219, 0.371);
+            border: 2px solid rgba(222, 219, 219, 0.371);
+            border-radius: 4px;
+            padding: 10px;padding-right: 110px;
+        }
+        button{
+            background-color: rgba(138, 42, 186, 0.787);
+            border: 1px solid rgba(138, 42, 186, 0.787);
+            border-radius: 4px;
+            color: white;
+            padding: 14px;width: 290px;
+            text-align: center;
+        }
+        input[type="checkbox"]{
+            width: 20px;height: 20px;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign in with your<br>credentials</h1>
+        <form>
+            <label>EMAIL ADDRESS</label><br>
+            <input type="email" placeholder="chuck_norris@roundhouse.com"><br><br>
+            <label>PASSWORD</label><br>
+            <input type="password"><br><br>
+            <input type="checkbox" checked>
+            <label>REMEMBER ME</label><br><br>
+            <button>Sign In</button>
+        </form>
+    </div>
+</body>
+</html>

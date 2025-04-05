@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title>DOM</title>
+</head>
+<body>
+    <!-- <input type="button" value="hello" class="js-button1">
+    <input type="button" value="world" class="js-button2"> -->
+
+    <button class="js-like-button" onclick="like()">like</button>
+
+    <button class="js-subscribe-button" onclick="subscribe()">subscribe</button>
+
+    
+
+    <script>
+        // console.log(document.title)
+        // console.log(document.body)
+        // console.log(document.querySelector('.js-button1'));
+        // console.log(document.querySelector('button'));
+        // document.querySelector('button').innerHTML='changed';
+
+        // document.body.innerHTML=''
+        // document.querySelector('.js-like-button').innerHTML='disliked'
+        // document.querySelector('.js-subscribe-button').innerHTML='unsubcribed'
+
+        function like(){
+            let likeButton=document.querySelector('.js-like-button');
+            if(likeButton.innerHTML==='like'){
+                likeButton.innerHTML='dislike';
+            }else{
+                likeButton.innerHTML='like';
+            }
+        }
+        function subscribe(){
+            let subButton=document.querySelector('.js-subscribe-button');
+            if(subButton.innerText==='subscribe'){
+                subButton.innerText='unsubcribe';
+            }else{
+                subButton.innerText='subscribe'
+            }
+        }
+
+
+
+
+    </script>
+</body>
+</html>

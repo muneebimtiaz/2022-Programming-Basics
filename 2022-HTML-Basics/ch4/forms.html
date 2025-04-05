@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter 4</title>
+</head>
+<body>
+    <div>
+        <form action="/new-contact" method="post">
+            <!-- input tags -->
+            <!-- text -->
+            <input type="text" name="username" placeholder="enter your username" required>
+            <br>
+            <!-- email -->
+            <input type="email" name="email of user" placeholder="enter your email" required>
+            <br>
+            <!-- password -->
+            <input type="password" name="password of user" placeholder="enter your password" required>
+            <br>
+            <!-- number -->
+            <input type="number" name="age of user" min="15" max="50" step="2" value="18">
+            <br>
+            All those fields accept a predefined value. If the user does not change it, this
+            will be the value sent to the server:
+            <br>
+            <!-- hidden -->
+            <input type="hidden" name="hidden-field" placeholder="some value">
+            This is commonly used to store values like a CSRF token, used for security
+            and user identification, or even to detect robots sending spam, using special
+            techniques.
+            It can also just be used to identify a form and its action.
+            <br>
+            <!-- submit -->
+            <input type="submit" value="submit-form">
+            <br>
+            <!-- file -->
+            <input type="file" name="secret-documents" multiple accept=".png, .jpg, .pdf">
+            <br>
+            <!-- button -->
+            <input type="button" value="enjoy!!">
+            <input type="reset" value="reset-form">
+            <br>
+            <!-- radio -->
+            red<input type="radio" name="favorite-color" value="red">
+            blue<input type="radio" name="favorite-color" value="blue">
+            purple<input type="radio" name="favorite-color" value="purple">
+            <br>
+            <!-- checkboxes -->
+            Attack on titan<input type="checkbox" name="favorite-anime">
+            Death note<input type="checkbox" name="favorite-anime">
+            Tokyo Ghoul<input type="checkbox" name="favorite-anime">
+            <br>
+            <!-- date and time -->
+            <input type="date" name="date-picked">
+            <input type="month" name="month-picked">
+            <input type="year" name="year-picked">
+            <input type="time" name="time-picked">
+            <input type="datetime-local" name="all in one">
+            <br>
+            <!-- color-picker -->
+            <input type="color" name="color-picked" value="#999999">
+            <br>
+            <!-- telephone number -->
+            <input type="tel" name="tel-number" pattern="[0-9]{3}-[0-9]{8}">
+            <br>
+            <!-- url-website -->
+            <input type="url" name="url-website" pattern="https://.*" >
+            <br>
+            <!-- textarea -->
+            <textarea name="text-area" cols="30" rows="10">Tell us about our service</textarea>
+            <br>
+            <!-- select -->
+            <select name="color">
+                <optgroup label="Primary">
+                        <option value="red">Red</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="blue">Blue</option>
+                </optgroup>
+                <optgroup label="Others">
+                        <option value="green">Green</option>
+                        <option value="pink">Pink</option>
+                </optgroup>
+               </select>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            color: rgba(64, 57, 57, 0.915);
+        }
+        .front{
+            display: flex;
+            border: 2px solid white;
+            width: fit-content;
+        }
+        .div-1{
+            padding: 35px;
+            margin: 20px;
+            border: 2px solid rgba(106, 105, 105, 0.313);
+            border-radius: 6px;
+            width: fit-content;
+            height: fit-content;
+        }
+        button{
+                padding: 5px;
+                border: 2px solid grey;
+                border-radius: 4px;
+                background-color: white;
+                padding-left: 25px;
+                padding-right: 25px;
+                margin-top: 10px;
+        }
+        h1{
+           position: relative;
+            bottom: 10px;
+            left: 20px;
+            color: rgba(0, 0, 0, 0.849);
+        }
+        .container{
+            margin: 5%;
+            border: 2px solid black;
+            border-radius: 8px;
+            width: fit-content;
+            padding-left:25px;
+            padding-right:25px ;
+            padding-top: 60px;
+            padding-bottom:25px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Dashboard</h1>
+    <div class="front">
+        <div class="div-1">
+            <img src="icon-money.svg" alt="icon" width="60px;">
+            <br>
+            <br>
+            <b style="color:rgba(0, 0, 0, 0.849);font-size: larger;">$4,502</b>
+            <p>Earned this month</p>
+            <br>
+           <pre style="font-size:small ;"><img src="icon-arrow-green.svg" alt="icon" width="18px" style="position:relative;top:4px"> <b style="color: rgb(127, 192, 155);">+6.05%</b> than last month</pre> 
+            <br>
+            <button>Earnings <img src="icon-arrow-right.svg" alt="icon" width="15px" style="position: relative;top: 4px;bottom:0px;"></button>
+        </div>
+
+        <div class="div-1">
+            <img src="icon-sales.svg" alt="icon" width="60px;">
+            <br>
+            <br>
+            <b style="color:rgba(0, 0, 0, 0.849);font-size: larger;">22</b>
+            <p>New sales</p>
+            <br>
+           <pre style="font-size:small ;"><img src="icon-arrow-green.svg" alt="icon" width="18px" style="position:relative;top:4px"> <b style="color: rgb(127, 192, 155);">+16.64%</b> than last month</pre> 
+            <br>
+            <button>Sales <img src="icon-arrow-right.svg" alt="icon" width="15px" style="position: relative;top: 4px;bottom:0px;"></button>
+        </div>
+
+        <div class="div-1">
+            <img src="icon-chat.svg" alt="icon" width="60px;">
+            <br>
+            <br>
+            <b style="color:rgba(0, 0, 0, 0.849);font-size: larger;">7</b>
+            <p>New comments</p>
+            <br>
+           <pre style="font-size:small ;"><img src="icon-arrow-red.svg" alt="icon" width="18px" style="position:relative;top:4px"> <b style="color: rgba(227, 80, 80, 0.832);">-19%</b> than last month</pre> 
+            <br>
+            <button>Comments <img src="icon-arrow-right.svg" alt="icon" width="15px" style="position: relative;top: 4px;bottom:0px;"></button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

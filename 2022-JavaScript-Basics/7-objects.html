@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>objects</title>
+</head>
+<body>
+    <script>
+        // An object groups multiple values together
+        const product={
+            name:'bread',   //property:value  (property-value pair)
+            price:`$${6}`
+        }
+        console.log(product);
+        console.log(product.price);
+        product.name='honey'; //change property value
+        console.log(product);
+        product.newProperty='rice'; //add new property
+        console.log(product);
+        delete product.newProperty; //delete property
+        console.log(product);
+        
+        const product2={
+            name:'icecream',   
+            price:`$${9}`,
+            ['serial-no']:337, //bracket notation lets us use properties that don't work with dot notation
+            rating:{           //nested object
+                stars:4.3,
+                count:79
+            },
+            func:function message(){
+                console.log('message display in console')
+            }
+        }
+        console.log(product2.price)
+        console.log(product2['serial-no'])
+        console.log(product2.rating.stars)  //calling property of obj inside obj
+        product2.func() //
+        // object.funciton()
+        console.log(typeof console)
+        console.log(typeof console.log)
+
+        // buildinobj
+        // JSON,localStorage
+
+        // JSON(javascript object notation) build-in objects help us work with JSON is syntax similar to javascript syntax,similiar to javascript object but has less features,JSON syntax understood almost every programming language(more universel),thats why we use JSON to send data between two different computers using two different programming languages,and also use JSON to store data.
+        
+        // converting js--->JSON
+        console.log(JSON.stringify(product2))  // JSON doesnot support function
+        console.log(typeof JSON.stringify(product2))
+
+        // converting JSON--->js
+        console.log(JSON.parse(JSON.stringify(product2)))
+        console.log(typeof JSON.parse(JSON.stringify(product2)))
+
+        // localStorage
+        localStorage.setItem('message','hello')
+        console.log(localStorage.getItem('message')) //local storage only supports strings
+
+        // auto-boxing(javascript automatically wraps the string in an object like a box)
+        console.log('hello'.length)
+        console.log('hello'.toUpperCase())
+        console.log(2.0.toString())
+        console.log(true.toString()) //doesnot work with null or undefined
+
+
+    </script>
+</body>
+</html>

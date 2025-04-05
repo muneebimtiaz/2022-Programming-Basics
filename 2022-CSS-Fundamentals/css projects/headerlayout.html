@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;padding: 0;
+            box-sizing: border-box;
+            font-family: poppins;
+        }
+        .navigation a{
+                    text-decoration: none;
+                    color: black;
+                    font-weight: bold;
+        }
+        .navigation li{
+            list-style: none;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            border: 2px solid black;
+            padding: 30px;
+            border-radius: 8px;
+            
+        }
+        li{
+            display: inline;
+            position: relative;
+            top: 10;bottom: 100;
+            padding-left: 24px;
+
+        }
+        li :hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav >
+             <label for="icon"><img src="logo.svg" alt="icon"></label>
+                    <ul class="navigation">
+                        <li><a href="_Portfolio">Portfolio</a></li>
+                        <li><a href="_Services">Services</a></li>
+                        <li><a href="_Blog">Blog</a></li>
+                        <li><a href="_About Me">About Me</a></li>
+                        <li><a href="_Contact">Contact</a></li>
+                    </ul>
+            </nav>
+        </header>
+    </div>
+</body>
+</html>

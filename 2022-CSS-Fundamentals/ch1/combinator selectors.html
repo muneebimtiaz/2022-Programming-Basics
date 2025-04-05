@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinator selectors</title>
+    <style>
+        /* There are four different combinator selectors in CSS:
+        descendant selector (space)
+        child selector (>)
+        adjacent sibling selector (+)
+        general sibling selector (~) */
+
+        /* The descendant selector matches all elements that are descendants of a specified element. */
+        div li{
+            font-family: Impact;
+            color: red;
+        }
+        span b{
+            background-color: blue;
+            color: azure;
+        }
+
+        /* The child selector selects all elements that are the children of a specified element. */
+        b>h1,p{
+            background-color: yellow;
+            color: black;
+        }
+        
+        /* The adjacent sibling selector is used to select an element that is directly after another specific element. */
+        /* Sibling elements must have the same parent element, and "adjacent" means "immediately following,very next one" */
+        u.grey+u{
+            background-color: grey;
+            font: red;
+        }
+
+        /* The general sibling selector selects all elements that are next siblings of a specified element. */
+        u.orange~u{
+            background-color: orange;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>hello</li>
+            <li>hi</li>
+            <li>hye</li>
+        </ul>
+    </div>
+    <span>
+        <b>
+            hello world!
+        </b>
+    </span>
+    <div>
+        <b>
+            <h1>heading</h1>
+            <p>this is a paragraph</p>
+        </b>
+    </div>
+    <div>
+        <em>
+            <u>html</u>
+            <u class="grey">css</u>
+            <u>frameworks</u>
+            <u>javascript</u>
+        </em>    
+    </div>
+    <div>
+        <em>
+            <u>html</u>
+            <u class="orange">css</u>
+            <u>frameworks</u>
+            <u>javascript</u>
+        </em>    
+    </div>
+</body>
+</html>

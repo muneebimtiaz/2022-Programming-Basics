@@ -1,0 +1,15 @@
+*{
+    margin: 3;padding: 3;
+}
+/* color name */
+h1{
+    color: crimson
+}
+/* hex code */
+h2{
+    color: #4169e1;
+}
+/* rgb value */
+p{
+    color:rgb(0, 128, 128);
+}

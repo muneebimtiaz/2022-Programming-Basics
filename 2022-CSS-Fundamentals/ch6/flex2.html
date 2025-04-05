@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex concept</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .flex-container{
+            background-color: gainsboro;
+            height: 700px;
+            width: 700px;
+            display: flex;
+            /* flex-direction: column; */
+            /* flex-wrap: wrap; */
+
+            /* The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties. */
+            /* justify-content: space-around; */
+            /* align-items: center; */
+            /* align-content: center; */
+
+        }
+
+        .flex-items{
+            background-color: blue;
+            color: white;
+            border: 1px solid blue;
+            margin: 1px;padding: 1px;
+            height: 100px;width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+    </style>
+</head>
+<body>
+<div class="flex-container">
+    <div class="flex-items">box 1</div>
+    <div class="flex-items">box 2</div>
+    <div class="flex-items">box 3</div>
+    <div class="flex-items">box 4</div>
+    <div class="flex-items">box 5</div>
+<!-- <div class="flex-items">box 5</div>
+    <div class="flex-items">box 5</div>
+    <div class="flex-items">box 5</div>
+    <div class="flex-items">box 5</div>
+    <div class="flex-items">box 5</div>
+    <div class="flex-items">box 5</div>
+    <div class="flex-items">box 5</div> -->
+</div>
+</body>
+</html>

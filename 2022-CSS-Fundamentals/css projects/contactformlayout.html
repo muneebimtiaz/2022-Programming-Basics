@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+    <style>
+    *{
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        /* flex-flow: wrap; */
+        /* align-items: flex-start;
+        justify-content: space-around; */
+        padding: 4%;
+        margin: 5%;
+        width: fit-content;
+        border: 2px solid black;
+        border-radius: 8px;
+    }
+    label{
+        font-size: small;
+    }
+    input{
+        background-color: rgba(242, 240, 240, 0.749);
+        padding: 10px;padding-right: 108px;
+        border-radius: 6px;
+    }
+    select{
+        background-color: rgba(242, 240, 240, 0.749);
+        padding: 10px;padding-right:115px;
+        border-radius: 6px;
+        color: rgb(97, 90, 90);
+    }
+    textarea{
+        background-color: rgba(242, 240, 240, 0.749);
+        padding: 10px;
+        border-radius: 6px;
+        color: rgb(97, 90, 90);
+    }
+    button{
+        padding: 13px 93px;
+        border-radius: 6px;
+        text-align: center;
+        background-color:rgb(29, 103, 232);color: white;
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div><img src="envelope.svg" alt="icon"></div>
+        <h1>Let's get in touch</h1>
+        <form>
+            <label><b>NAME</b></label><br>
+            <input type="text" placeholder="Chuck Norris"><br><br>
+            <label><b>EMAIL ADDRESS</b></label><br>
+            <input type="email" placeholder="chuck@roundhouse.com"><br><br>
+            <label><b>DEPARTMENT</b></label><br>
+            <select>
+                <option value="0">Select a department</option>
+            </select>
+            <br><br>
+            <label><b>MESSAGE</b></label><br>
+            <Textarea cols="39" rows="7">Hey,I'd like to get in touch with your sales department regarding a possible collaboration.</Textarea>
+            <br><br>
+            <button>Send Message</button>
+        </form>
+    </div>
+</body>
+</html>

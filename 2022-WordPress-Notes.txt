@@ -1,0 +1,27 @@
+wordpress
+xampp control panel 
+apache 		start
+mysql  		start
+
+
+chrome
+localhost/wordpress
+localhost/phpmyadmin
+localhost/wordpress/wp-login
+
+themes of wordpress
+blocksy
+astra
+
+https://www.cloudways.com/blog/install-wordpress-locally/
+
+
+	NEW 2024 METHOD
+go to localwp.com and install local for windows.
+open localapp on desktop and open it, create new site.
+after creating the localhost click ssl option to trusted and then wp admin option enter username and password.
+in the wordpress dashboard go to setting->general and url textbox add https s at the end and save.
+go to setting->permalinks and checkbox postname and save.
+go to themes install blocksy and activate.
+go to plugins and install blocksy companaion activate it also install elementor and starter templates.
+go to blocksy->starter sites

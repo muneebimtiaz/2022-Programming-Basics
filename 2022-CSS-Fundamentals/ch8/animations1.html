@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations#01</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            background-color: indigo;
+            height: 600px;width: 600px;
+        }
+
+        .child{
+            height: 200px;width: 200px;
+            background-color: coral;
+            font-size: 50px;
+            position: relative;
+            animation-name: dell;
+            animation-duration: 10s;
+            
+            
+        }
+
+        @keyframes dell {
+            0%{background-color: coral;left: 0px;top: 0px;}
+            25%{background-color: red;left: 400px;top: 0px;}
+            50%{background-color: blue;left: 400px;top: 400px;}
+            75%{background-color: green;left: 0px;top: 400px;}
+            100%{background-color: yellow;left: 0px;top: 0px;}
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>

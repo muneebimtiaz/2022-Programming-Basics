@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <form action="ggg.php">
+    <div>
+        <label for="email of person">Enter your email</label>
+        <input type="email" name="email of person" id="email of person" placeholder="john.doe@gmail.com" >
+    </div>
+    <br><br>
+    <div>
+        <label for="username of person">Enter your username</label>
+        <input type="text" name="username of person" id="username of person" placeholder="john.doe" >
+    </div>
+    <br><br>
+    <div>
+        <label for="password of person">Enter your password</label>
+        <input type="password" name="password of person" id="password of person">
+    </div>
+    <br><br>
+    <div>
+        <label for="age of person">Enter your age</label>
+        <input type="number" name="age of person" id="age of person">
+    </div>
+    <br><br>
+    <div>
+        <label for="date of birth of person">Enter date of birth</label>
+        <input type="date" name="date of birth of person" id="date of birth of person">
+    </div>
+    <br><br>
+    <div>
+        <label for="continent 1">Select a continent to vist</label><br>
+        Europe : <input type="radio" name="trip" id="continent 1" value="Europe">
+        <label for="continent 2"></label><br>
+        Asia : <input type="radio" name="trip" id="continent 2" value="Asia">
+        <label for="continent 3"></label><br>
+        N&S America : <input type="radio" name="trip" id="continent 3" value="N&S America">
+    </div>
+    <br><br>
+    <div>
+        <label for="type anything">Things your wanted on travel</label><br>
+        <textarea name="type anything" id="type anything" cols="30" rows="10" ></textarea>
+    </div>
+    <br><br>
+        <label for="airline">select a airline:</label>
+        <select name="airline" id="airline">
+        <option value="fly emirities">fly emirities</option>
+        <option value="qatar airways" selected>qatar airways</option>
+        <option value="PIA">PIA</option>
+    </select>
+        <br><br>
+        <input type="submit" value="submit form">
+        <input type="reset" value="reset form">
+    <br><br>
+</form>
+</body>
+</html>

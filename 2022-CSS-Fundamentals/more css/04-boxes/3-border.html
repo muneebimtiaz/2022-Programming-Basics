@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box dimensions</title>
+    <style>
+        .p1{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border-width: thick;
+            border-color: black;
+            /* border radius */
+            border-radius: 4px;
+        }
+        .p2{
+            width: 150px;
+            height: 150px;
+            background-color: orange;
+            /* border shorhand */
+            border: 2px solid black;
+            border-radius: 4px;  
+        }
+/*
+border-top-width
+border-right-width
+border-bottom-width
+border-left-width
+You can also specify different widths for the four border values in one property, like so:
+border-width: 2px 1px 1px 2px;
+*/
+    </style>
+</head>
+<body>
+    <div>
+        <p class="p1">Jupiter is the fifth planet from the Sun and the largest in the Solar System. </p>
+        <p class="p2">It is orbiting the Sun at a distance of 5.20 AU (778.5 Gm) with an orbital period of 11.86 years. </p>
+    </div>
+</body>
+</html>

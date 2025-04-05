@@ -1,0 +1,22 @@
+-----------------Fallback Fonts-------------------
+However, there are no 100% completely web safe fonts. There is always a chance that a font is not found or is not installed properly.
+Therefore, it is very important to always use fallback fonts.
+This means that you should add a list of similar "backup fonts" in the font-family property. If the first font does not work, the browser will try the next one, and the next one, and so on. Always end the list with a generic font family name.
+
+
+
+--------------All CSS Font Properties---------------
+Property	Description
+font	        Sets all the font properties in one declaration
+font-family	Specifies the font family for text
+font-size	Specifies the font size of text
+font-style	Specifies the font style for text
+font-variant	Specifies whether or not a text should be displayed in a small-caps font
+font-weight	Specifies the weight of a font
+
+
+
+--------------icons to add in css-------------------
+font awesome icons
+bootstrap icons
+google icons

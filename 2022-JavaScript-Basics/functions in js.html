@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions in javascript</title>
+</head>
+<body>
+    <script>
+        // declarations vs. expressions
+        sum(3,4);  
+        function sum(a,b){
+            return a+b;
+        }
+        
+        sum(3,4); //error
+        let sum=function(a,b){
+            return a+b;
+        };
+        // function hoisting happens only for funtions declarations because the function name is known ahead of time.function expressions on the other hand cannot be hoisted because the functions can be referenced only through a variable.so this code causes an error
+
+        // functions as values
+        // parameters
+        // overloading
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Targeting an element with a class or id */
+        p.dog-name{
+            background-color: red;font-family:Arial, Helvetica, sans-serif;
+        }
+        p#cat-name{
+            background-color: blue;
+        }
+        /* Targeting multiple classes */
+        .dog.t-rex{
+            background-color: Yellow;
+        }
+        /* Combining classes and ids */
+        .favorite-fruit#fruit{
+            background-color: green;
+        }
+        /* Grouping selectors */
+        p , .reply{
+            background-color: grey;
+        }
+
+    </style>
+</head>
+<body>
+    Targeting an element with a class or id
+    <p class="dog-name">t rex</p>
+    <p id="cat-name">alice</p>
+    Targeting multiple classes
+    <p class="dog t-rex">t rex</p>
+    Combining classes and ids
+    <p class="favorite-fruit" id="fruit">apple</p>
+    Grouping selectors
+    You can combine selectors to apply the same declarations to multiple
+    selectors. To do so, you separate them with a comma.
+    <p>hello</p>
+    <span class="reply">bye</span>
+
+</body>
+</html>

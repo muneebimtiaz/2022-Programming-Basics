@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <title>rock paper scissor</title>
+</head>
+<body>
+    <p>Rock Paper Scissor Game</p>
+    <input type="button" value="Rock👊" onclick="let compMove=pickCompMove();let rr=rockResult();alert(`You submitted: Rock.Computer submitted: ${compMove}.Result: ${rr}`);">
+
+    <input type="button" value="Paper🖐" onclick="compMove=pickCompMove();let pr=paperResult();alert(`You submitted: Paper.Computer submitted: ${compMove}.Result: ${pr}`);">
+
+    <input type="button" value="Scissor✌" onclick="compMove=pickCompMove();let sr=paperResult();alert(`You submitted: Scissor.Computer submitted: ${compMove}.Result: ${sr}`);">
+
+    <script>
+        // for function name best practice to choose a verb(action)with name
+            function pickCompMove(){
+            const anyNumber=Math.random();
+            let submission='';
+            if(anyNumber>=0 && anyNumber<1/3){
+                submission='Rock';
+            }else if(anyNumber>=1/3 && anyNumber<2/3){
+                submission='Paper';
+            }else if(anyNumber>=2/3 && anyNumber<1){
+                submission='Scissors';
+            }
+            return submission
+        }
+
+            function rockResult(){
+            let result='';
+            compMove=pickCompMove();
+            if(compMove==='Rock'){
+                result='Tie';
+            }else if(compMove==='Paper'){
+                result='You lose';
+            }else{
+                result='You win';
+            }
+            return result;
+        }
+
+            function paperResult(){
+            let result='';
+            compMove=pickCompMove();
+            if(compMove==='Rock'){
+                result='You win';
+            }else if(compMove==='Paper'){
+                result='Tie';
+            }else{
+                result='You lose';
+            }
+            return result;
+        }
+
+            function scissorResult(){
+            let result='';
+            compMove=pickCompMove();
+            if(compMove==='Rock'){
+                result='You lose';
+            }else if(compMove==='Paper'){
+                result='You win';
+            }else{
+                result='Tie';
+            }
+            return result;
+        }
+    </script>
+</body>

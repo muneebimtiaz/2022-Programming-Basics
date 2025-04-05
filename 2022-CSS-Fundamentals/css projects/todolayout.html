@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            border-radius: 8px;
+            margin: 5%;
+            padding: 5%;
+            width: fit-content;
+            height: fit-content;
+        }
+        .one{
+            background-color: rgba(126, 227, 168, 0.11);
+            padding: 10px;
+            padding-right: 70px;
+            border-left: 8px solid #57b385;
+            display: flex;
+            align-items: center;
+        }
+        .two{
+            background-color: rgba(126, 227, 168, 0.06);
+            padding: 10px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-right: 70px;
+            border-left: 8px solid rgb(34, 214, 230);
+            display: flex;
+            align-items: center;
+        }
+        .three{
+            background-color: #6d78720c;
+            padding: 10px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-right: 70px;
+            border-left: 8px solid rgba(91, 6, 165, 0.869);
+            display: flex;
+            align-items: center;
+            color: rgba(128, 128, 128, 0.792);
+            font-weight: 100
+            
+        }
+        input.same{
+            margin-right: 15px;
+            accent-color: white;
+            width: 15;height: 15;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading"><h1>Today</h1></div>
+        <div class="one">
+            <div><input type="checkbox" class="same"></div>
+            <div>Robert Fox Portfolio<br>Website<br>
+                 <b style="font-size: 13px; font-weight:100; color: rgb(154, 153, 153);">Design the landing page</b></div>
+        </div>
+        <br>
+        <div class="two">
+            <div><input type="checkbox" class="same"></div>
+            <div>Daily reading<br>
+                 <b style="font-size: 13px; font-weight:100; color: rgb(154, 153, 153); ">Napoleon Hill</b></div>
+        </div>
+        <br>
+        <div class="three">
+            <div><input type="checkbox" class="same" checked></div>
+            <div><del>YouTube content<br></del>
+                 <b style="font-size: 13px; font-weight:100;color: rgb(154, 153, 153);">Design the landing page</b></div>
+        </div>
+    </div>
+</body>
+</html>
